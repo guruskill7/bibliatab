@@ -4,7 +4,9 @@
 
 A beautiful, minimalist homepage extension for Chrome featuring daily Bible verses, weather, and customizable features. Transform your new tab into a divine sanctuary that inspires and uplifts you every day.
 
-![BiBliaTab Logo](logo.png)
+
+<img width="128" height="128" alt="icon128" src="https://github.com/user-attachments/assets/640dca85-8c88-46e5-849f-a773f9d0bf7a" />
+
 
 ## ✨ Features
 
@@ -47,49 +49,15 @@ A beautiful, minimalist homepage extension for Chrome featuring daily Bible vers
 ### ⚙️ **Advanced Settings**
 - **Theme Selection**: Choose verse themes that inspire you
 - **Auto-refresh**: Daily verse updates at midnight
-- **Import/Export**: Backup and restore your settings
 - **Keyboard Shortcuts**: Power-user friendly hotkeys
 
-## 🚀 Installation
-
-### Method 1: Load as Unpacked Extension (Recommended for Development)
-
-1. **Download the Extension**
-   ```bash
-   git clone https://github.com/guruskill7/bibliatab.git
-   # or download and extract the ZIP file
-   ```
-
-2. **Open Chrome Extensions**
-   - Navigate to `chrome://extensions/`
-   - Enable "Developer mode" (toggle in top right)
-
-3. **Load the Extension**
-   - Click "Load unpacked"
-   - Select the `bibliatab` folder
-   - BiBliaTab will now replace your new tab page!
 
 ### Method 2: Chrome Web Store (Coming Soon)
 *BiBliaTab will be available on the Chrome Web Store soon for easy one-click installation.*
 
 ## 🛠️ Setup & Configuration
 
-### Weather Setup (Optional)
-To enable weather features:
-
-1. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
-2. Open `script.js` in your extension folder
-3. Find line ~420 and replace `'your-openweather-api-key'` with your actual API key
-4. Reload the extension in `chrome://extensions/`
-
 **Note**: Bible verses work immediately without any API keys required!
-
-### Icon Files
-Add these icon files to the `icons/` folder:
-- `icon16.png` (16×16 pixels)
-- `icon32.png` (32×32 pixels)
-- `icon48.png` (48×48 pixels)
-- `icon128.png` (128×128 pixels)
 
 ## 📖 Bible Translations & Languages
 
@@ -165,19 +133,6 @@ BiBliaTab respects your privacy:
 - **Secure APIs**: All Bible content fetched from trusted, public APIs
 - **Open Source**: Full transparency with public code
 
-## 🔧 Development
-
-### Prerequisites
-- Chrome browser
-- Basic knowledge of HTML, CSS, JavaScript
-- Text editor (VS Code recommended)
-
-### Local Development
-1. Clone the repository
-2. Make your changes
-3. Reload extension in `chrome://extensions/`
-4. Test your changes
-
 ### Contributing
 We welcome contributions! Please:
 
@@ -187,29 +142,19 @@ We welcome contributions! Please:
 4. Test thoroughly
 5. Submit a Pull Request
 
-#### Adding New Bible Translations
-1. Update `BIBLE_API_CONFIG` in `bible-verses.js`
-2. Add translation to `TRANSLATION_MAPPINGS`
-3. Test with various verses
-4. Update documentation
-
 ## 🐛 Troubleshooting
 
 ### Common Issues
 
 **Verses Not Loading**
 - Check internet connection
-- Verify console for API errors
-- Try different translation/language
+- Try different translation/language - the Portuguese bible translation is only available in some chapters
 
 **Weather Not Working**
 - Ensure location permissions are granted
-- Add valid OpenWeatherMap API key
 - Check browser location settings
 
 **Extension Not Loading**
-- Verify all files are in the same folder
-- Check `manifest.json` syntax
 - Reload extension in Chrome settings
 
 **Settings Not Saving**
@@ -225,21 +170,19 @@ We welcome contributions! Please:
 
 ## 🚧 Roadmap
 
-### Version 1.1 (Coming Soon)
-- [ ] Verse of the Day based on liturgical calendar
-- [ ] Favorite verses bookmarking
+### Version 1.30.0 (Coming Soon)
+- [ ] Bible study sync notes
 - [ ] Reading plans integration
 - [ ] More Bible translations (German, Italian, Arabic)
 - [ ] Dark/Light theme toggle
 - [ ] Verse sharing to social media
 
-### Version 1.2 (Future)
+### Version 1.31 (Future)
 - [ ] Bible study notes integration
-- [ ] Community verse sharing
+- [ ] verse sharing
 - [ ] Offline verse caching
 - [ ] Progressive Web App (PWA) features
-- [ ] Voice reading of verses
-- [ ] Multiple verse displays
+- [ ] Voice reading of verses 
 
 ### Long-term Vision
 - [ ] Bible study groups integration
@@ -288,5 +231,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 > *"Your word is a lamp for my feet, a light on my path."* — Psalm 119:105
 
 ---
+
 
 *Made with ❤️ and 🙏 for the global Christian community*
