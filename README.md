@@ -1,209 +1,217 @@
-# BiBliaTab - Chrome Extension
+# 📖✨ BiBliaTab - Chrome Extension
 
 > *"As for me and my house, we will serve the Lord" — Joshua 24:15*
 
 A beautiful, minimalist homepage extension for Chrome featuring daily Bible verses, weather, and customizable features. Transform your new tab into a divine sanctuary that inspires and uplifts you every day.
+## 🌟 Overview
+
+**BiBliaTab** transforms your Chrome new tab page into a beautiful, spiritual sanctuary featuring daily Bible verses, weather updates, and extensive customization options. Experience the Word of God in multiple languages with a stunning interface designed for daily inspiration and reflection.
 
 
 <img width="128" height="128" alt="icon128" src="https://github.com/user-attachments/assets/640dca85-8c88-46e5-849f-a773f9d0bf7a" />
 
 
-## ✨ Features
 
-### 📖 **Biblical Inspiration**
-- **Daily Bible Verses**: Automatically fetched from comprehensive Bible APIs
-- **Multi-language Support**: English, French, Spanish, Portuguese
-- **Multiple Translations**: KJV, NIV, ESV, RVR60, LSG, and more
-- **Thematic Verses**: Choose by theme (Hope, Faith, Strength, Peace, Love, Wisdom, Joy)
-- **Verse Search**: Look up any specific Bible reference (e.g., John 3:16)
-- **One-click Copy**: Share verses easily with built-in copy functionality
+
+<div align="center">
+  
+  [![Version](https://img.shields.io/badge/version-1.29.2-blue.svg)](https://github.com/guruskill7/bibliatab)
+  [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green.svg)](https://chrome.google.com/webstore)
+  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+  [![Security](https://img.shields.io/badge/Security-Hardened-brightgreen.svg)](SECURITY.md)
+  [![Biblia.com](https://img.shields.io/badge/Powered%20by-Biblia.com-gold.svg)](https://biblia.com/)
+</div>
+
+🔒 **Security & Compliance**: BiBliaTab follows Chrome Web Store Single Purpose policy and uses Chrome Search API to respect your default search engine settings.
+
+## 🚀 Quick Start
+
+### 📦 Installation
+1. **Download** or clone this repository
+2. **Open Chrome** and navigate to `chrome://extensions/`
+3. **Enable Developer Mode** (toggle in top-right)
+4. **Click "Load unpacked"** and select the project folder
+5. **Open a new tab** to see BiBliaTab in action!
+
+*Chrome Web Store version coming soon!*
+
+## ✨ Key Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 📚 **Multi-Language Bible Support**
+- **5 Languages**: English, Spanish, French, Portuguese, Russian
+- **20+ Bible Translations** powered by Biblia.com API
+- **Daily verse refresh** with themed collections
+- **Custom verse search** by reference
+
+### 🎨 **Beautiful Bible Reader**
+- **Full Chapter Reading** with elegant interface
+- **Verse Highlighting** with multiple colors
+- **Note-Taking System** for personal reflections
+- **Chapter Navigation** with intuitive controls
 
 ### 🌤️ **Weather Integration**
-- **Real-time Weather**: Current conditions for your location
-- **Beautiful Weather Icons**: Contextual emoji-based weather display
-- **Location-based**: Automatic geolocation with privacy respect
-- **Minimal Design**: Clean, unobtrusive weather widget
+- **Real-time weather** using Open-Meteo API
+- **Geolocation support** or manual location input
+- **Beautiful weather icons** with day/night themes
 
-### ⏰ **Time & Date**
-- **Dynamic Time Display**: Beautiful, large time with customizable format
-- **Smart Date**: Localized date display matching your Bible language
-- **12/24 Hour Format**: Choose your preferred time display
+</td>
+<td width="50%">
 
-### 🔍 **Smart Search**
-- **Instant Search**: Direct Google search integration
-- **Keyboard-friendly**: Type anywhere to start searching
-- **Clean Interface**: Minimalist search bar with smooth animations
+### 🔒 **Security & Privacy**
+- **XSS Protection** with comprehensive input sanitization
+- **Content Security Policy** with strict domain restrictions
+- **Minimal Permissions** (storage only)
+- **No Data Collection** - all settings stored locally
 
-### 🎨 **Customizable Backgrounds**
-- **Divine Gradients**: Beautiful, heavenly color schemes
-- **Custom Images**: Upload your own inspirational backgrounds
-- **Unsplash Integration**: Random beautiful nature photos
-- **Overlay Control**: Adjustable opacity for perfect readability
+### 🎯 **Verse Themes**
+- **Random Inspirational** verses
+- **Hope & Future** themed collection
+- **Faith & Trust** verses
+- **Strength & Courage** collection
 
-### 🔗 **Quick Links**
-- **Customizable Shortcuts**: Add your most-visited sites
-- **Icon Support**: Emoji icons for visual appeal
-- **Drag & Drop**: Easy reordering (coming soon)
-- **Smart Defaults**: Pre-loaded with popular sites
+### 🖼️ **Background Customization**
+- **Unsplash Integration** with 4K images
+- **Custom image upload** support
+- **Beautiful gradients** and solid colors
+- **Smart refresh rates**
 
-### ⚙️ **Advanced Settings**
-- **Theme Selection**: Choose verse themes that inspire you
-- **Auto-refresh**: Daily verse updates at midnight
-- **Keyboard Shortcuts**: Power-user friendly hotkeys
-
-
-### Method 2: Chrome Web Store (Coming Soon)
-*BiBliaTab will be available on the Chrome Web Store soon for easy one-click installation.*
-
-## 🛠️ Setup & Configuration
-
-**Note**: Bible verses work immediately without any API keys required!
-
-## 📖 Bible Translations & Languages
-
-### 🇺🇸 English
-- **KJV** - King James Version (1611)
-- **NIV** - New International Version
-- **ESV** - English Standard Version
-- **ASV** - American Standard Version
-- **WEB** - World English Bible
-- **NASB** - New American Standard Bible
-
-### 🇪🇸 Spanish
-- **RVR60** - Reina-Valera 1960
-- **NVI** - Nueva Versión Internacional
-
-### 🇫🇷 French
-- **LSG** - Louis Segond
-
-### 🇧🇷 Portuguese
-- **ARC** - Almeida Revista e Corrigida
-- **NVI-PT** - Nova Versão Internacional
-
-*More languages and translations are being added regularly!*
+</td>
+</tr>
+</table>
 
 ## ⌨️ Keyboard Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
 | `Ctrl/Cmd + ,` | Open Settings |
-| `Ctrl/Cmd + R` | Get New Verse |
+| `Ctrl/Cmd + R` | New Bible Verse |
 | `Ctrl/Cmd + C` | Copy Current Verse |
-| `Escape` | Close Settings Modal |
-| `Type anywhere` | Focus Search Bar |
-| `Ctrl/Cmd + Shift + ?` | Show Keyboard Help |
+| `Any letter/number` | Focus Search Bar |
+| `Enter` | Perform Search |
 
-## 🎯 Verse Themes
+## 🔧 Customization Options
 
-Choose from carefully curated themes:
+### 🎨 **Typography & Layout**
+- **100+ Google Fonts** with search functionality
+- **Hierarchical font sizing** (Time 4.5×, Greeting 2.8×, etc.)
+- **Text shadows** with intensity controls
+- **Customizable widths** for search bar and verse box
 
-- **🌅 Hope & Future** - Verses about God's plans and promises
-- **🙏 Faith & Trust** - Building confidence in God's faithfulness  
-- **💪 Strength & Courage** - Finding power in difficult times
-- **☮️ Peace & Comfort** - Rest and tranquility in God's presence
-- **❤️ Love & Grace** - God's unconditional love and mercy
-- **🧠 Wisdom & Guidance** - Seeking God's direction and understanding
-- **😊 Joy & Thanksgiving** - Celebrating God's goodness and blessings
+### 🌍 **Multi-Language Settings**
+- **Bible Language**: Choose from 5 supported languages
+- **Translation**: Select from authentic Bible versions
+- **Weather Location**: City name or GPS coordinates
+- **Date/Time Format**: Localized display options
 
-## 🗂️ File Structure
+### 🎭 **Visual Themes**
+- **Verse Themes**: Random, Hope, Faith, Strength, Custom
+- **Background Types**: Unsplash categories, custom upload, gradients
+- **Weather Display**: Toggle with beautiful icons
+- **Auto-refresh**: Daily verse updates
 
-```
-bibliatab/
-├── manifest.json          # Extension configuration
-├── index.html             # Main homepage structure
-├── styles.css             # Beautiful CSS styling
-├── script.js              # Main application logic
-├── bible-verses.js        # Bible API integration
-├── icons/                 # Extension icons
-│   ├── icon16.png
-│   ├── icon32.png
-│   ├── icon48.png
-│   └── icon128.png
-└── README.md              # This documentation
-```
+## 📖 Supported Bible Translations
 
-## 🛡️ Privacy & Security
+<details>
+<summary><strong>Click to view all supported translations</strong></summary>
 
-BiBliaTab respects your privacy:
+### 🇺🇸 **English**
+- **KJV** - King James Version (Authorized Version)
+- **ASV** - American Standard Version
+- **DARBY** - 1890 Darby Bible
+- **KJV1900** - King James Version (1900)
+- **KJVAPOC** - King James Version with Apocrypha
 
-- **Local Storage Only**: Settings stored locally on your device
-- **Optional Location**: Weather requires location permission (optional)
-- **No Tracking**: No analytics, cookies, or user tracking
-- **No Data Collection**: We don't collect or transmit personal data
-- **Secure APIs**: All Bible content fetched from trusted, public APIs
-- **Open Source**: Full transparency with public code
+### 🇪🇸 **Spanish**
+- **RV1909** - Reina-Valera 1909
+- **RVA** - Reina-Valera Actualizada
 
-### Contributing
-We welcome contributions! Please:
+### 🇫🇷 **French**
+- **DARBY** - Bible J.N. Darby French
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a Pull Request
+### 🇧🇷 **Portuguese**
+- **ALMEIDA** - João Ferreira de Almeida
 
-## 🐛 Troubleshooting
+### 🇷🇺 **Russian**
+- **RUSV** - Russian Synodal Version
 
-### Common Issues
+</details>
 
-**Verses Not Loading**
-- Check internet connection
-- Try different translation/language - the Portuguese bible translation is only available in some chapters
+## 🛠️ Technical Stack
 
-**Weather Not Working**
-- Ensure location permissions are granted
-- Check browser location settings
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript (ES6+)
+- **APIs**: Biblia.com, Open-Meteo, Unsplash
+- **Security**: XSS protection, CSP, input sanitization
+- **Architecture**: Chrome Extension Manifest V3
+- **Storage**: Local Chrome Storage API
 
-**Extension Not Loading**
-- Reload extension in Chrome settings
+## 🚀 Chrome Web Store Deployment
 
-**Settings Not Saving**
-- Check browser storage permissions
-- Try refreshing the page
-- Clear browser cache if needed
+BiBliaTab is **security-hardened** and ready for Chrome Web Store deployment:
 
-### Getting Help
-1. Check the [Issues](https://github.com/guruskill7/bibliatab/issues) page
-2. Search existing solutions
-3. Create a new issue with detailed information
-4. Include browser version and error messages
+### ✅ **Security Compliance**
+- ✅ Manifest V3 compliant
+- ✅ XSS protection implemented
+- ✅ Content Security Policy configured
+- ✅ Input validation and sanitization
+- ✅ Minimal permissions (storage only)
+- ✅ HTTPS-only API connections
 
-## 🚧 Roadmap
+# 🤝 Contributing
 
-### Version 1.30.0 (Coming Soon)
-- [ ] Bible study sync notes
-- [ ] Reading plans integration
-- [ ] More Bible translations (German, Italian, Arabic)
-- [ ] Dark/Light theme toggle
-- [ ] Verse sharing to social media
+We welcome contributions!
 
-### Version 1.31 (Future)
-- [ ] Bible study notes integration
-- [ ] verse sharing
-- [ ] Offline verse caching
-- [ ] Progressive Web App (PWA) features
-- [ ] Voice reading of verses 
 
-### Long-term Vision
-- [ ] Bible study groups integration
-- [ ] Church calendar integration
-- [ ] Devotional content
-- [ ] Prayer request features
-- [ ] Christian music integration
+## � Support & Feedback
 
-## 🤝 Support
+- **Issues**: [GitHub Issues](https://github.com/guruskill7/bibliatab/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/guruskill7/bibliatab/discussions)
+- **Email**: devproduction51@proton.me
 
-### Ways to Support BiBliaTab
-- ⭐ **Star the Repository** on GitHub
-- 🐛 **Report Bugs** or suggest features
-- 💝 **Share with Friends** who would appreciate daily Bible verses
-- 🙏 **Pray for the Project** and its impact on users' lives
-- 💻 **Contribute Code** or translations
+You can also use the **"Send Feedback"** or **"Get Support"** links directly in the extension settings.
 
-### Contact
-- **GitHub Issues**: [Report bugs or request features](https://github.com/guruskill7/bibliatab/issues)
-- **Email**: support@bibliatab.com (coming soon)
-- **Twitter**: @BiBliaTab (coming soon)
+## 🔄 Version History
+
+<details>
+<summary><strong>Click to view version history</strong></summary>
+
+### v1.29.2 (Current) - Chrome Web Store Compliance Release
+- 🏪 **Chrome Web Store Compliance** - Fixed Single Purpose policy violation
+- 🔍 **Chrome Search API Integration** - Now respects user's default search engine
+- 🗑️ **Removed Custom Search Engines** - Eliminated search engine selection to comply with policy
+- 📋 **Single Purpose Focus** - Clarified extension's spiritual sanctuary purpose
+- 🔒 **Maintained Security Features** - All XSS protection and CSP remain intact
+- ✅ **Ready for Chrome Web Store** - Fully compliant with all policies
+
+### v1.28.0 (Previous) - Security-Hardened Release
+- 🔒 **Comprehensive Security Review** - XSS protection and input sanitization
+- 🛡️ **Enhanced Content Security Policy** with strict domain restrictions
+- 🔧 **Security Framework** - Added security-config.js with utility functions
+- 🌍 **Russian Language Support** - Added Russian Bible translation
+- 📝 **Improved Note System** - Enhanced note-taking with secure DOM manipulation
+- ⚡ **Performance Optimizations** - Better background loading and caching
+- 🎨 **UI Refinements** - Improved Bible reader interface
+- 📚 **Biblia.com API** - Switched to reliable Biblia.com for Bible content
+- ✅ **Chrome Web Store Ready** - Manifest V3 compliant and security-approved
+
+### v1.25 (Previous)
+- ✨ Beautiful golden wooden Bible Reader background
+- 🌍 Multi-language Bible support (4 languages)
+- 📖 Multiple authentic Bible translations via API.Bible
+- 🎨 Enhanced UI with golden theme
+- 🔍 Improved verse search functionality
+
+### v1.16_Dev4
+- 🎯 Added verse themes (Hope, Faith, Strength)
+- 🖼️ Custom background upload
+- ⌨️ Keyboard shortcuts
+- 🌤️ Weather integration
+- 🔧 Advanced customization options
+
+</details>
 
 ## 📜 License
 
@@ -211,26 +219,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- **Bible APIs**: [bible-api.com](https://bible-api.com) and [bolls.life](https://bolls.life) for free Bible access
-- **Weather Data**: [OpenWeatherMap](https://openweathermap.org) for weather information
-- **Icons**: Various emoji providers for beautiful iconography
-- **Community**: All beta testers and contributors
-
-## 📊 Stats
-
-- **Bible Translations**: 8+ translations in 4 languages
-- **Verses Available**: 31,000+ verses from the complete Bible
-- **Themes**: 8 carefully curated inspirational themes
-- **Install Size**: < 1MB (lightweight and fast)
-- **Load Time**: < 500ms (optimized for speed)
+- **Biblia.com** for providing authentic Bible translations
+- **Open-Meteo** for free weather data
+- **Unsplash** for beautiful background images
+- **Google Fonts** for typography options
+- **Chrome Extensions Team** for the platform
 
 ---
 
-**BiBliaTab** - *Start each day with God's Word* 🙏
+<div align="center">
+  <strong>📖 "Your word is a lamp for my feet, a light on my path." - Psalm 119:105 ✨</strong>
+  
+  Made with ❤️ by the BiBliaTab Team
+</div>
 
-> *"Your word is a lamp for my feet, a light on my path."* — Psalm 119:105
-
----
-
-
-*Made with ❤️ and 🙏 for the global Christian community*
