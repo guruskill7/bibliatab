@@ -1,7 +1,7 @@
 # 🔒 Privacy Policy for BiBliaTab
 
-**Last Updated**: August 5, 2025  
-**Effective Date**: August 5, 2025
+**Last Updated**: August 7, 2025  
+**Effective Date**: August 7, 2025
 
 ## 📖 Overview
 
@@ -21,7 +21,6 @@ BiBliaTab stores the following information **locally on your device** using Chro
 - **Bible preferences**: Selected language, translation, verse themes
 - **Background preferences**: Unsplash categories, custom images, refresh rates
 - **Interface preferences**: Time format (12h/24h), greeting display, weather display
-- **Search engine preference**: Your chosen default search engine
 
 #### 📝 **Bible Reader Data**
 - **Verse highlights**: Colors and positions of highlighted Bible verses
