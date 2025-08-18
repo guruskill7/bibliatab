@@ -12,28 +12,18 @@ A beautiful, minimalist homepage extension for Chrome featuring daily Bible vers
 
 
 
-
-<div align="center">
   
-  [![Version](https://img.shields.io/badge/version-1.29.2-blue.svg)](https://github.com/guruskill7/bibliatab)
+  [![Version](htt## 📞 Support & Feedbacks://img.shields.io/badge/version-1.29.2-blue.svg)](https://github.com/guruskill7/bibliatab)
   [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green.svg)](https://chrome.google.com/webstore)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
   [![Security](https://img.shields.io/badge/Security-Hardened-brightgreen.svg)](SECURITY.md)
   [![Biblia.com](https://img.shields.io/badge/Powered%20by-Biblia.com-gold.svg)](https://biblia.com/)
 </div>
 
+
+
 🔒 **Security & Compliance**: BiBliaTab follows Chrome Web Store Single Purpose policy and uses Chrome Search API to respect your default search engine settings.
 
-## 🚀 Quick Start
-
-### 📦 Installation
-1. **Download** or clone this repository
-2. **Open Chrome** and navigate to `chrome://extensions/`
-3. **Enable Developer Mode** (toggle in top-right)
-4. **Click "Load unpacked"** and select the project folder
-5. **Open a new tab** to see BiBliaTab in action!
-
-*Chrome Web Store version coming soon!*
 
 ## ✨ Key Features
 
@@ -104,7 +94,7 @@ A beautiful, minimalist homepage extension for Chrome featuring daily Bible vers
 ### 🌍 **Multi-Language Settings**
 - **Bible Language**: Choose from 5 supported languages
 - **Translation**: Select from authentic Bible versions
-- **Weather Location**: City name or GPS coordinates
+- **Weather Location**: City name or browser geolocation (never physical address; only with your permission)
 - **Date/Time Format**: Localized display options
 
 ### 🎭 **Visual Themes**
@@ -133,17 +123,17 @@ A beautiful, minimalist homepage extension for Chrome featuring daily Bible vers
 - **DARBY** - Bible J.N. Darby French
 
 ### 🇧🇷 **Portuguese**
-- **ALMEIDA** - João Ferreira de Almeida
+- **ALMEIDA** - João Ferreira de Almeida ---> not yet available in certain books of the bible
 
 ### 🇷🇺 **Russian**
 - **RUSV** - Russian Synodal Version
 
 </details>
 
-## 🛠️ Technical Stack
+### 🛠️ Technical Stack
 
 - **Frontend**: HTML5, CSS3, Vanilla JavaScript (ES6+)
-- **APIs**: Biblia.com, Open-Meteo, Unsplash
+- **APIs**: Biblia.com, Open-Meteo, Unsplash, BigDataCloud (for city lookup from browser geolocation)
 - **Security**: XSS protection, CSP, input sanitization
 - **Architecture**: Chrome Extension Manifest V3
 - **Storage**: Local Chrome Storage API
@@ -160,16 +150,11 @@ BiBliaTab is **security-hardened** and ready for Chrome Web Store deployment:
 - ✅ Minimal permissions (storage only)
 - ✅ HTTPS-only API connections
 
-# 🤝 Contributing
-
-We welcome contributions!
-
-
-## � Support & Feedback
+## 📞 Support & Feedback
 
 - **Issues**: [GitHub Issues](https://github.com/guruskill7/bibliatab/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/guruskill7/bibliatab/discussions)
-- **Email**: devproduction51@proton.me
+- **Support**: <a href="https://chromewebstore.google.com/detail/gjnjdonmenibianggpakdmkipmhjpjib/support" target="_blank" rel="noopener">Contact the developer via Chrome Web Store Support</a>
 
 You can also use the **"Send Feedback"** or **"Get Support"** links directly in the extension settings.
 
@@ -200,7 +185,7 @@ You can also use the **"Send Feedback"** or **"Get Support"** links directly in 
 ### v1.25 (Previous)
 - ✨ Beautiful golden wooden Bible Reader background
 - 🌍 Multi-language Bible support (4 languages)
-- 📖 Multiple authentic Bible translations via API.Bible
+- 📖 15+ authentic Bible translations via API.Bible
 - 🎨 Enhanced UI with golden theme
 - 🔍 Improved verse search functionality
 
@@ -232,4 +217,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   
   Made with ❤️ by the BiBliaTab Team
 </div>
+
 
