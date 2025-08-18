@@ -13,7 +13,7 @@ A beautiful, minimalist homepage extension for Chrome featuring daily Bible vers
 
 
   
-  [![Version](htt## 📞 Support & Feedbacks://img.shields.io/badge/version-1.29.2-blue.svg)](https://github.com/guruskill7/bibliatab)
+  [![Version](http://img.shields.io/badge/version-1.29.3-blue.svg)](https://github.com/guruskill7/bibliatab)
   [![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green.svg)](https://chrome.google.com/webstore)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
   [![Security](https://img.shields.io/badge/Security-Hardened-brightgreen.svg)](SECURITY.md)
@@ -163,7 +163,7 @@ You can also use the **"Send Feedback"** or **"Get Support"** links directly in 
 <details>
 <summary><strong>Click to view version history</strong></summary>
 
-### v1.29.2 (Current) - Chrome Web Store Compliance Release
+### v1.29.3 (Current) - Chrome Web Store Compliance Release
 - 🏪 **Chrome Web Store Compliance** - Fixed Single Purpose policy violation
 - 🔍 **Chrome Search API Integration** - Now respects user's default search engine
 - 🗑️ **Removed Custom Search Engines** - Eliminated search engine selection to comply with policy
@@ -217,5 +217,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   
   Made with ❤️ by the BiBliaTab Team
 </div>
+
 
 
