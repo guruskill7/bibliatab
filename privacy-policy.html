@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy for BibliaTab</title>
+<style>
+  :root {
+    --primary: #4F46E5;
+    --secondary: #7C3AED;
+    --accent: #F59E0B;
+    --text: #1F2937;
+    --muted: #6B7280;
+    --bg: #FAFAFA;
+    --card: #FFFFFF;
+    --border: #E5E7EB;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg);
+  }
+  .eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary);
+    background: rgba(79,70,229,0.08);
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .last-updated { font-style: italic; color: var(--muted); margin-bottom: 32px; }
+  h2 {
+    font-size: 20px;
+    color: var(--text);
+    margin-top: 40px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+  }
+  h3 { font-size: 16px; margin-top: 24px; margin-bottom: 8px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .card strong { color: var(--primary); }
+  .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: rgba(245,158,11,0.15);
+    color: #92400E;
+    margin-left: 6px;
+  }
+  .yes { color: #16A34A; }
+  .no { color: #DC2626; }
+  a { color: var(--primary); }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+    text-align: center;
+  }
+  code { background: rgba(0,0,0,0.05); padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<span class="eyebrow">BibliaTab</span>
+<h1>Privacy Policy</h1>
+<p class="last-updated">Last Updated: September 2, 2026 &middot; Applies to v1.41.0 and later</p>
+
+<p>BibliaTab does not collect, sell, or share personal data. Nearly everything it stores stays on your device (or in your browser's own account sync, under your control). This page explains exactly what data moves where, and why.</p>
+
+<h2>Local &amp; Synced Storage</h2>
+<p>BibliaTab saves your preferences so they're there next time you open a new tab.</p>
+<ul>
+  <li><strong>Settings, notes, and shortcuts</strong> are saved via your browser's built-in <code>storage.sync</code> API. If you're signed into your browser (Chrome, Edge, or Firefox account) with sync enabled, these travel with your browser's own encrypted sync — the same mechanism it uses for your bookmarks or other extensions' settings. BibliaTab never sends this data to any server we operate; it goes only through your browser vendor's own sync infrastructure.</li>
+  <li><strong>Custom background photos</strong> you upload are kept in local browser storage on that device only — they are not synced, since they're too large for sync storage.</li>
+  <li><strong>Verse highlights</strong> are kept in local browser storage.</li>
+  <li>If sync isn't available, everything above falls back to plain local storage on that one device.</li>
+  <li>Uninstalling the extension, or clearing its site data in your browser, removes all of it.</li>
+</ul>
+
+<h2>External Services BibliaTab Talks To</h2>
+<p>These requests happen only when you use the related feature. None of them include your name, email, or any account identifier — BibliaTab has no accounts.</p>
+
+<div class="card">
+  <strong>bolls.life</strong> &amp; <strong>bible.helloao.org</strong><br>
+  Purpose: fetch Bible verse/chapter text.<br>
+  Data sent: the book, chapter, and translation you requested.
+</div>
+
+<div class="card">
+  <strong>api.scripture.api.bible</strong><br>
+  Purpose: fetch the list of books for certain Bible translations in the Bible Reader.<br>
+  Data sent: the translation ID you selected, plus an app-level API key (not tied to you personally).
+</div>
+
+<div class="card">
+  <strong>api.open-meteo.com</strong><br>
+  Purpose: fetch the current weather for the widget.<br>
+  Data sent: latitude/longitude only.
+</div>
+
+<div class="card">
+  <strong>nominatim.openstreetmap.org</strong> (OpenStreetMap)<br>
+  Purpose: turn coordinates into a readable city name, or a city name you type into coordinates.<br>
+  Data sent: either device/IP-derived coordinates (see "Geolocation" below), or the city name you manually enter in Settings.
+</div>
+
+<div class="card">
+  <strong>api.bigdatacloud.net</strong><br>
+  Purpose: coarse, city-level location fallback for weather, used only if device location isn't available (see below).<br>
+  Data sent: your IP address, sent automatically by the browser as part of any web request — BibliaTab doesn't add anything to it.
+</div>
+
+<div class="card">
+  <strong>picsum.photos</strong><br>
+  Purpose: background photos when "Picsum Photos" is selected as your background type.<br>
+  Data sent: a randomly generated number and the image size requested — no personal data, no category label.
+</div>
+
+<p>All requests use HTTPS.</p>
+
+<h2>Permissions Explained</h2>
+
+<h3>Storage <span class="tag">required</span></h3>
+<p>Lets BibliaTab save your settings, notes, and shortcuts as described above. It cannot read anything else in your browser.</p>
+
+<h3>Search <span class="tag">required</span></h3>
+<p>The new-tab search bar uses your browser's Search API to send what you type to <em>your own default search engine</em> — the same one your browser's address bar already uses. BibliaTab doesn't see, log, or store your search queries; the browser hands them directly to your search engine.</p>
+
+<h3>Geolocation <span class="tag">optional feature, still requires the permission be present</span></h3>
+<p>Used only for the weather widget, in this order:</p>
+<ol>
+  <li><strong>Device location</strong> (GPS / Wi-Fi / network), via your browser's own one-time permission prompt. You can Allow or Deny this prompt — either is fine.</li>
+  <li>If denied, unavailable, or it times out: <strong>coarse IP-based location</strong> (city-level, via BigDataCloud).</li>
+  <li>If that also fails: BibliaTab shows a default forecast and a prompt to type your city manually in Settings.</li>
+</ol>
+<p>You can skip all of this by typing a city name (or exact coordinates) directly into Settings &rarr; Weather Location at any time.</p>
+
+<h3>What BibliaTab never asks for</h3>
+<ul>
+  <li class="no">✗ Browsing history, open tabs, or bookmarks</li>
+  <li class="no">✗ Your files, downloads, camera, or microphone</li>
+  <li class="no">✗ Any account, sign-in, email, or password</li>
+  <li class="no">✗ Advertising or analytics identifiers</li>
+</ul>
+
+<h2>Third-Party Data Sharing</h2>
+<p>BibliaTab does not sell or share data with advertisers, analytics companies, or data brokers. The only outbound requests are the ones listed above, each triggered directly by something you did (opened a tab, read a chapter, checked the weather, changed a background).</p>
+
+<h2>Security</h2>
+<ul>
+  <li>All external requests use HTTPS</li>
+  <li>A Content Security Policy restricts the extension to a known list of endpoints (the ones listed above)</li>
+  <li>User-entered text is sanitized before being inserted into the page</li>
+  <li>No <code>eval()</code> or dynamic code execution</li>
+  <li>Source is open — anyone can review it on <a href="https://github.com/guruskill7/bibliatab">GitHub</a></li>
+</ul>
+
+<h2>Children's Privacy</h2>
+<p>BibliaTab collects no personal data from anyone, including children, and has no accounts, ads, or communication features.</p>
+
+<h2>Your Choices</h2>
+<ul>
+  <li><strong>Turn off weather</strong> in Settings to stop all location-related requests entirely.</li>
+  <li><strong>Type a city manually</strong> in Settings to skip both device and IP-based location lookups.</li>
+  <li><strong>Switch background type</strong> to Gradient or Solid Color to stop requests to Picsum.</li>
+  <li><strong>Uninstall the extension</strong> to remove all locally stored data.</li>
+</ul>
+
+<h2>Changes to This Policy</h2>
+<p>Material changes will update the date at the top of this page and be noted in the extension's in-app "what's new" notice after an update.</p>
+
+<h2>Contact</h2>
+<p>
+  GitHub Issues: <a href="https://github.com/guruskill7/bibliatab/issues">github.com/guruskill7/bibliatab/issues</a><br>
+  Email: devproduction51@proton.me<br>
+  Developer: Snoubs Dev Studio (<a href="https://github.com/guruskill7">@guruskill7</a>)
+</p>
+
+<footer>
+  📖 BibliaTab is made by Snoubs Dev Studio. Source available on <a href="https://github.com/guruskill7/bibliatab">GitHub</a>.
+</footer>
+
+</body>
+</html>
