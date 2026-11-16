@@ -1,6 +1,6 @@
 # Privacy Policy for BibliaTab
 
-**Last Updated: November 16, 2026** · Applies to v1.42.0 and later
+**Last Updated: November 16, 2026** · Applies to v1.44.0 and later
 
 Your privacy is critically important to us. BibliaTab is designed with privacy as a core principle. This policy explains what data we collect (spoiler: almost nothing), how we use it, and your rights.
 
@@ -132,6 +132,16 @@ All of these are necessary for the extension's core functionality and contain no
 
 ---
 
+## Optional Donations
+
+BiBliaTab is free. Settings → About contains an optional **Support BiBliaTab** card, and the website has Support links. They simply open a donation page on **Ko-fi** ([ko-fi.com/snoubsdevstudio](https://ko-fi.com/snoubsdevstudio)) in a new tab.
+
+- The extension itself never processes payments and never knows whether you donated. No data is sent to Ko-fi unless you click the link.
+- Once you are on Ko-fi, your payment is handled by Ko-fi and its payment partners (PayPal or Stripe) under their own privacy policies. We receive only what Ko-fi shares with page owners, such as your name and message if you choose to provide them.
+- Donating is entirely optional. Nothing in BiBliaTab is locked behind it.
+
+---
+
 ## Children's Privacy
 
 BibliaTab collects no personal data from anyone, including children, and has no accounts, ads, or communication features, in line with COPPA.
@@ -161,6 +171,9 @@ Material changes will update the date at the top of this page and be noted in Bi
 ---
 
 ## Version History
+
+**v1.44.0 (November 16, 2026)**
+- Added an optional "Support BiBliaTab" link (opens a Ko-fi donation page in a new tab). The extension does not process payments or send data to Ko-fi
 
 **v1.42.0 (November 16, 2026)**
 - Disclosed the Google favicon service used by the redesigned Shortcuts page to display site icons (only the domain of each shortcut is sent)
