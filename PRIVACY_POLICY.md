@@ -1,6 +1,6 @@
 # Privacy Policy for BibliaTab
 
-**Last Updated: September 2, 2026** · Applies to v1.41.0 and later
+**Last Updated: November 16, 2026** · Applies to v1.42.0 and later
 
 Your privacy is critically important to us. BibliaTab is designed with privacy as a core principle. This policy explains what data we collect (spoiler: almost nothing), how we use it, and your rights.
 
@@ -37,8 +37,8 @@ For the same content as a browsable webpage, see [privacy-policy.html](privacy-p
 These requests happen only when you use the related feature, and never include your name, email, or any account identifier — BibliaTab has no accounts.
 
 ### 📖 **bolls.life** and **bible.helloao.org**
-- **Purpose**: Fetch Bible verse and chapter text
-- **Data sent**: Book, chapter, and translation requested
+- **Purpose**: Fetch Bible verse and chapter text, and run Bible keyword searches (bolls.life)
+- **Data sent**: Book, chapter, and translation requested — and, if you use the Bible Reader's keyword search, the words you typed into that search box. Search words are sent only when you submit a search, are not linked to any account or identifier, and are not stored by BibliaTab.
 - **Data stored**: None
 
 ### 📚 **api.scripture.api.bible**
@@ -62,6 +62,11 @@ These requests happen only when you use the related feature, and never include y
 - **Data sent**: Your IP address, sent automatically by the browser like any web request
 - **Data received**: Approximate city/region and coordinates
 - **Data stored**: None by this service
+
+### 🔗 **Google favicon service (www.google.com/s2/favicons)**
+- **Purpose**: Show each site's own icon on the Shortcuts page, for shortcuts that don't have a custom icon
+- **Data sent**: The website address (domain) of each shortcut you saved, only so its icon can be fetched — no names, accounts, or identifiers. Your IP address is sent automatically by the browser like any web request
+- **Data stored**: None by BibliaTab. If you don't want this request, give a shortcut an emoji as its icon and no request is made for it
 
 ### 🗺️ **OpenStreetMap Nominatim**
 - **Purpose**: Convert coordinates to a readable city name (after device/IP location), or convert a city name you type into coordinates
@@ -121,6 +126,7 @@ The only data transmission occurs when:
 2. You request weather data (to Open-Meteo)
 3. BibliaTab looks up your location for weather (to your browser's own location service, then BigDataCloud and/or OpenStreetMap)
 4. You load a background image (to Picsum Photos)
+5. You open the Shortcuts page and a shortcut has no custom icon (the shortcut's domain is sent to Google's favicon service to fetch its icon)
 
 All of these are necessary for the extension's core functionality and contain no personal information.
 
@@ -155,6 +161,13 @@ Material changes will update the date at the top of this page and be noted in Bi
 ---
 
 ## Version History
+
+**v1.42.0 (November 16, 2026)**
+- Disclosed the Google favicon service used by the redesigned Shortcuts page to display site icons (only the domain of each shortcut is sent)
+- Visual redesign; no other change to data collection
+
+**v1.41.3 (November 15, 2026)**
+- Bible keyword search now uses bolls.life's server-side search; the words you search for are sent to bolls.life when you submit a search (previously matching was done locally)
 
 **v1.41.0 (September 2, 2026)**
 - Added device geolocation (with IP-based and manual-entry fallbacks) for weather; corrected this section to reflect that a real location permission is now used
